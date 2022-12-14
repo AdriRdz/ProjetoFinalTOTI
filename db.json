@@ -1,12 +1,3 @@
 {
-  "users": [
-    {
-      "nome": "",
-      "email": "pedro2022@teste.com",
-      "telefone": "",
-      "name": "Pedro Fonseca",
-      "phone": "112856885",
-      "id": 1
-    }
-  ]
+  "users": []
 }

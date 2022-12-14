@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-size: 100vw;
+    height: 45vw;
+    background-repeat: no-repeat;
+    color: white;
+    background-image: linear-gradient(to bottom, rgba(143, 144, 148, 0.52), rgba(49, 42, 47, 0.73)), url('../assets/livro2.jpeg');
+}
+
+.cadastro {
+
+  padding: 10px 10px 190px;
+  display: flex;
+  justify-content: center;
+  position: center;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    position: center;
+    font-size: 60px;
+    color: white;
+    padding-bottom: 330px;
+}
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+  
+  /* Responsivo */
+
+  @media only screen and (max-width: 825px) {
+    .titulo {
+      position:relative;
+      top: -4.5em;
+      font-size: 35px;
+      max-width:350px;
+
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align:center;
+    }
+    .slogan{
+      margin-top: -22.8em;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align:center;
+      animation-duration: .5s;
+    }
+  }
+

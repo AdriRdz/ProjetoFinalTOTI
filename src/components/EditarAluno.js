@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FormControl, FormGroup, InputLabel, Input, Typography, Button, styled } from "@mui/material";
+import "./EditarAluno.css"
 import { useNavigate, useParams } from 'react-router-dom';
 import { getUser, editUser } from '../service/api';
 
@@ -58,7 +59,7 @@ const EditarAluno = () => {
                 <Input onChange={(e) => onValueChange(e)} name="phone" value={user.phone} />
             </FormControl>
             <FormControl>
-                <Button onClick={() => addUserDetails()} variant="contained">Editar</Button>
+                <Button onClick={() => addUserDetails()} variant="contained" className='Btn_Editar'>Editar</Button>
             </FormControl>
         </Container>
     )

@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaLinkedin, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import "./Footer.css"
+
 
 
 
@@ -11,11 +13,11 @@ const Footer = () => {
                 <div className='footer-col'>
                     <h4>Instituto de Tecnologia e Saber</h4>
                     <ul>
-                        <li><Link href=''>Desenvolvido por:</Link></li>
-                        <li><a href="https://github.com/AdriRdz" target="_blank"> Adriana Rodriguez</a></li>
-                        <li><a href="https://github.com/joseLumbo" target="_blank"> Jose Lumbo</a></li>
-                        <li><a href="https://github.com/NelsonVillarreal" target="_blank"> Nelson Villaroel</a></li>
-                        <li><Link href='/'>Walid Abdelfattah</Link></li>
+                        <li><h5>Desenvolvido por:</h5></li>
+                        <li><a href="https://github.com/AdriRdz" target="_blank" rel="noreferrer"> Adriana Rodriguez</a></li>
+                        <li><a href="https://github.com/joseLumbo" target="_blank" rel="noreferrer"> Jose Lumbo</a></li>
+                        <li><a href="https://github.com/NelsonVillarreal" target="_blank" rel="noreferrer"> Nelson Villarreal</a></li>
+                        <li><a href="https://github.com/walidzizo3030" target="_blank" rel="noreferrer"> Walid Abdelfattah</a></li>
                     </ul>
                 </div>
                 <div className='footer-col'>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FormControl, FormGroup, InputLabel, Input, Typography, Button, styled } from "@mui/material";
 import { useNavigate } from 'react-router-dom';
-import "./Adicionar.css"
+import "./AdicionarAluno.css"
 import { addUser } from '../service/api';
 
 
@@ -13,9 +13,9 @@ margin: 5% auto 0 auto;
 }
 `
 const initialValues = {
-    nome: '',
+    name: '',
     email: '',
-    telefone: ''
+    phone: ''
 }
 
 const AdicionarAluno = () => {

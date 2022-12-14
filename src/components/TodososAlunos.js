@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react';
 import { Table, TableHead, TableBody, TableRow, TableCell, styled, Button } from '@mui/material';
 import { getUsers, deleteUser } from '../service/api';
 import { Link } from 'react-router-dom';
-// import EditIcon from "@mui/icons-material/Edit";
-// import DeleteIcon from '@mui/icons-material/Delete';
 
 import './TodosOsAlunos.css'
 
@@ -59,14 +57,6 @@ const TodososAlunos = () => {
                     <TableCell style={{ width: '25vw' }}>Telefone</TableCell>
                     <TableCell style={{ width: '25vw' }}>Botões</TableCell>
                 </Thead>
-                {/* <Button
-                    variant="contained"
-                    className="button-entrar"
-                    size="small"
-                    color="primary"
-                >
-                    <EditIcon>Editar</EditIcon>
-                </Button> */}
             </TableHead>
             <TableBody>
                 {
