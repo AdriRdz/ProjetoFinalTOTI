@@ -1,10 +1,12 @@
 import './App.css';
-import NavBar from './components/NavBar';
-import Home from './components/Home';
-import TodososAlunos from './components/TodososAlunos';
+import NavBar from './components/navbar/Navbar';
+import Home from './components/home/Home';
+import TodososAlunos from './components/TodosOsAlunos';
 import AdicionarAluno from './components/AdicionarAluno';
 import EditarAluno from './components/EditarAluno';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Footer from './components/footer/Footer';
+
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
         <Route path='/add' element={<AdicionarAluno />} />
         <Route path='/edit/:id' element={<EditarAluno />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }

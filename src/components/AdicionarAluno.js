@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FormControl, FormGroup, InputLabel, Input, Typography, Button, styled } from "@mui/material";
 import { useNavigate } from 'react-router-dom';
+import "./Adicionar.css"
 import { addUser } from '../service/api';
 
 
@@ -50,7 +51,7 @@ const AdicionarAluno = () => {
                 <Input onChange={(e) => onValueChange(e)} name="phone" />
             </FormControl>
             <FormControl>
-                <Button onClick={() => addUserDetails()} variant="contained">Adicionar</Button>
+                <Button onClick={() => addUserDetails()} variant="contained" className='Btn_Adicionar'>Adicionar</Button>
             </FormControl>
         </Container>
     )

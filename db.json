@@ -1,70 +1,12 @@
 {
   "users": [
     {
-      "name": "Maria Guedes",
-      "email": "maria2022@teste.com",
-      "phone": "99999999999",
-      "id": 1
-    },
-    {
-      "name": "Paula Fonseca",
-      "email": "paula2022@teste.com",
-      "phone": "0987654321",
-      "id": 2
-    },
-    {
-      "name": "Adriana",
-      "email": "adriana2022@teste.com",
-      "phone": "2365987410",
-      "id": 3
-    },
-    {
-      "name": "cesar",
-      "email": "cesar2022@teste.com",
-      "phone": "9298822159",
-      "id": 4
-    },
-    {
-      "name": "Pedro",
+      "nome": "",
       "email": "pedro2022@teste.com",
-      "phone": "5698412307",
-      "id": 5
-    },
-    {
-      "name": "Pablo",
-      "email": "pablo2022@teste.com",
-      "phone": "8957412350",
-      "id": 6
-    },
-    {
-      "name": "joao",
-      "email": "joao2022@teste.com",
-      "phone": "9587410321",
-      "id": 8
-    },
-    {
-      "name": "Rejane",
-      "email": "rejane2022@teste.com",
-      "phone": "3698521472",
-      "id": 9
-    },
-    {
-      "name": "Juana",
-      "email": "juana@gmail.com",
-      "phone": "264542129769",
-      "id": 10
-    },
-    {
-      "name": "carolina",
-      "email": "caro@gmail.com",
-      "phone": "685169317366",
-      "id": 11
-    },
-    {
-      "name": "Pedro",
-      "email": "joao2022@teste.com",
-      "phone": "9298822159",
-      "id": 12
+      "telefone": "",
+      "name": "Pedro Fonseca",
+      "phone": "112856885",
+      "id": 1
     }
   ]
 }

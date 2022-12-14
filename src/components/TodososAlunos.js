@@ -2,6 +2,10 @@ import { useEffect, useState } from 'react';
 import { Table, TableHead, TableBody, TableRow, TableCell, styled, Button } from '@mui/material';
 import { getUsers, deleteUser } from '../service/api';
 import { Link } from 'react-router-dom';
+// import EditIcon from "@mui/icons-material/Edit";
+// import DeleteIcon from '@mui/icons-material/Delete';
+
+import './TodosOsAlunos.css'
 
 
 const TodososAlunos = () => {
@@ -9,27 +13,27 @@ const TodososAlunos = () => {
     const [users, setUsers] = useState([])
 
     const StyledTable = styled(Table)`
-    width: 90%;
-    margin: 50px auto 0 auto;
-    `
-        ;
-
+    width: 100vw;
+    table-layout: static;
+    `;
+    
     const Thead = styled(TableRow)`
+    max-width: 1200px;
     background: #000;
     & > th{
         color: #fff;
         font-size: 20px;
         font-weight: bold;
+        overflow-wrap: break-word;
     }
-    `
-        ;
+    `;
 
     const TBody = styled(TableRow)`
     & > td{
+        overflow-wrap: break-word;
         font-size: 20px;
     }
-    `
-
+    `;
 
     useEffect(() => {
         getUsersDetails();
@@ -37,7 +41,6 @@ const TodososAlunos = () => {
 
     const getUsersDetails = async () => {
         let response = await getUsers();
-        console.log(response);
         setUsers(response.data);
     }
 
@@ -50,13 +53,20 @@ const TodososAlunos = () => {
         <StyledTable>
             <TableHead>
                 <Thead>
-                    <TableCell>Id</TableCell>
-                    <TableCell>Nome</TableCell>
-                    <TableCell>Email</TableCell>
-                    <TableCell>Telefone</TableCell>
-                    <TableCell></TableCell>
+                    <TableCell style={{ width: '01vw' }}>Id</TableCell>
+                    <TableCell style={{ width: '24vw' }}>Nome</TableCell>
+                    <TableCell style={{ width: '25vw' }}>Email</TableCell>
+                    <TableCell style={{ width: '25vw' }}>Telefone</TableCell>
+                    <TableCell style={{ width: '25vw' }}>Botões</TableCell>
                 </Thead>
-
+                {/* <Button
+                    variant="contained"
+                    className="button-entrar"
+                    size="small"
+                    color="primary"
+                >
+                    <EditIcon>Editar</EditIcon>
+                </Button> */}
             </TableHead>
             <TableBody>
                 {
@@ -64,12 +74,13 @@ const TodososAlunos = () => {
                         <TBody>
                             <TableCell>{user.id}</TableCell>
                             <TableCell>{user.name}</TableCell>
-                            {/* <TableCell>{user.username}</TableCell> */}
                             <TableCell>{user.email}</TableCell>
                             <TableCell>{user.phone}</TableCell>
                             <TableCell>
-                                <Button variant="contained" style={{ marginRight: 10 }} component={Link} to={`/edit/${user.id}`}>Editar</Button>
-                                <Button variant="contained" color="secondary" onClick={() => deleteUserData(user.id)}>Deletar</Button>
+                                <div className="button-container">
+                                    <Button variant="contained" color="warning" className="button" component={Link} to={`/edit/${user.id}`}>Editar</Button>
+                                    <Button variant="contained" color="error" className="button" onClick={() => deleteUserData(user.id)}>Deletar</Button>
+                                </div>
                             </TableCell>
                         </TBody>
                     ))

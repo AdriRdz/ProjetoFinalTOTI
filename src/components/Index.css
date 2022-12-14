@@ -11,13 +11,15 @@
     height: 45vw;
     background-repeat: no-repeat;
     color: white;
+    background-image: linear-gradient(to bottom, rgba(143, 144, 148, 0.52), rgba(49, 42, 47, 0.73)), url('../assets/livro2.jpeg');
 }
+
 .cadastro {
 
   padding: 10px 10px 190px;
   display: flex;
-    justify-content: center;
-    position: center;
+  justify-content: center;
+  position: center;
 }
 
 .titulo {
@@ -99,10 +101,21 @@ background-color: #1B1B1B;
   }
 .social-links ul{
     margin-top: 30px;
-    display: block;
     text-align: center;
     color: #fff;
     transition: all 0.5s ease;
+    
+  }
+  .logos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  
+  }
+  .logos li{
+    margin-left: 15px;
   }
   .footer-col p{
     font-size: 16px;
@@ -118,7 +131,24 @@ background-color: #1B1B1B;
   }
   
   
-  @media(max-width: 767px){
+  /* @media(max-width: 767px){
+   
+    /* .cadastro{
+      font-size: 15px;
+    }
+
+    .titulo{
+      font-size: 15px;
+      margin-top: -150px;
+    }
+
+    .slogan{
+      font-size: 8px;
+      margin-top: -245px;
+    }
+    
+    
+    
     .footer-col{
       width: 50%;
    padding: 0 15px;
@@ -126,3 +156,40 @@ background-color: #1B1B1B;
     }  
   
   }
+
+  @media screen and (max-width: 750px) {
+    .titulo {
+      margin-left: 40px;
+      font-size: 20px;
+    
+    }
+  }
+  
+     */
+
+  @media only screen and (max-width: 825px) {
+    .titulo {
+      position:relative;
+      top: -4.5em;
+      font-size: 35px;
+      max-width:350px;
+
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align:center;
+    }
+    .slogan{
+      margin-top: -22.8em;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align:center;
+      animation-duration: .5s;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+
+  }
+
