@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import { FormControl, FormGroup, InputLabel, Input, Typography, Button, styled } from "@mui/material";
 import { useNavigate } from 'react-router-dom';
-import "./AdicionarAluno.css"
 import { addUser } from '../service/api';
-
+import "./AdicionarAluno.css"
 
 const Container = styled(FormGroup)`
 width:50%;
@@ -12,6 +11,7 @@ margin: 5% auto 0 auto;
     margin-top: 20px;
 }
 `
+
 const initialValues = {
     name: '',
     email: '',
@@ -23,11 +23,8 @@ const AdicionarAluno = () => {
     const [user, setUser] = useState(initialValues);
     const navigate = useNavigate();
 
-
-
     const onValueChange = (e) => {
         setUser({ ...user, [e.target.name]: e.target.value })
-        console.log(user);
     }
 
     const addUserDetails = async () => {
@@ -55,7 +52,6 @@ const AdicionarAluno = () => {
             </FormControl>
         </Container>
     )
-
 }
 
 export default AdicionarAluno;

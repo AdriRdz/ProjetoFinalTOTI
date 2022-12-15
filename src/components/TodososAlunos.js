@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Table, TableHead, TableBody, TableRow, TableCell, styled, Button } from '@mui/material';
 import { getUsers, deleteUser } from '../service/api';
 import { Link } from 'react-router-dom';
-
 import './TodosOsAlunos.css'
 
 
@@ -14,7 +13,7 @@ const TodososAlunos = () => {
     width: 100vw;
     table-layout: static;
     `;
-    
+
     const Thead = styled(TableRow)`
     max-width: 1200px;
     background: #000;
@@ -78,7 +77,6 @@ const TodososAlunos = () => {
             </TableBody>
         </StyledTable>
     )
-
 }
 
 export default TodososAlunos;

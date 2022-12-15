@@ -1,3 +1,10 @@
 {
-  "users": []
+  "users": [
+    {
+      "name": "Pedro Eduardo Moraes",
+      "email": "eduardo2022@gmail.com",
+      "phone": "9295684785",
+      "id": 1
+    }
+  ]
 }

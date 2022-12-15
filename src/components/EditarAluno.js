@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
 import { FormControl, FormGroup, InputLabel, Input, Typography, Button, styled } from "@mui/material";
-import "./EditarAluno.css"
 import { useNavigate, useParams } from 'react-router-dom';
 import { getUser, editUser } from '../service/api';
-
+import "./EditarAluno.css"
 
 const Container = styled(FormGroup)`
 width:50%;
@@ -35,7 +34,6 @@ const EditarAluno = () => {
 
     const onValueChange = (e) => {
         setUser({ ...user, [e.target.name]: e.target.value })
-        console.log(user);
     }
 
     const addUserDetails = async () => {
@@ -63,7 +61,6 @@ const EditarAluno = () => {
             </FormControl>
         </Container>
     )
-
 }
 
 export default EditarAluno;

@@ -19,6 +19,7 @@ export const getUsers = async () => {
         console.log('Error while calling getUsers api', error.message);
     }
 }
+
 export const getUser = async (data) => {
     try {
         return await axios.get(`${API_URL}/${data}`);
@@ -27,8 +28,6 @@ export const getUser = async (data) => {
     }
 }
 
-
-
 export const editUser = async (data, id) => {
     try {
         return await axios.put(`${API_URL}/${id}`, data);
@@ -36,7 +35,6 @@ export const editUser = async (data, id) => {
         console.log('Error while calling editUser api', error.message)
     }
 }
-
 
 export const deleteUser = async (id) => {
     try {

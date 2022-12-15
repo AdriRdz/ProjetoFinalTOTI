@@ -7,8 +7,6 @@ import EditarAluno from './components/EditarAluno';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from './components/footer/Footer';
 
-
-
 function App() {
   return (
     <BrowserRouter>
